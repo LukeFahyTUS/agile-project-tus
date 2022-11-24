@@ -8,6 +8,7 @@ public class ShoppingCart {
 		List<ProductModel> listOfProductsCurrently= shoppingCart.productList;
 		listOfProductsCurrently.add(product);
 		shoppingCart.productList = listOfProductsCurrently;
+		shoppingCart.cartTotal=shoppingCart.cartTotal+product.price;
 		return shoppingCart;
 	}
 	
@@ -15,6 +16,7 @@ public class ShoppingCart {
 		List<ProductModel> listOfProductsCurrently= shoppingCart.productList;
 		listOfProductsCurrently.remove(product);
 		shoppingCart.productList = listOfProductsCurrently;
+		shoppingCart.cartTotal=shoppingCart.cartTotal-product.price;
 		return shoppingCart;
 	}
 
