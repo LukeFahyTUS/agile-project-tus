@@ -1,4 +1,6 @@
 import java.io.*;
+import src.model.ShoppingCartModel;
+import src.model.ProductModel;
 public class ShoppingCart {
 	
 	ShoppingCartModel shoppingCart= new ShoppingCartModel();
